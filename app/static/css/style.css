@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+    color: #fff;
+}
+
+/* Layout */
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    padding: 40px 30px;
+    background: rgba(0,0,0,0.35);
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cfd8dc;
+}
+
+.tags {
+    margin-top: 25px;
+}
+
+.tags span {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    padding: 6px 10px;
+    margin: 5px 5px 0 0;
+    border-radius: 12px;
+    font-size: 11px;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card */
+.card {
+    width: 480px;
+    background: rgba(255,255,255,0.06);
+    padding: 40px;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #b0bec5;
+    margin-bottom: 30px;
+}
+
+/* Upload */
+.upload-box {
+    border: 2px dashed rgba(255,255,255,0.4);
+    padding: 35px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    border-color: #03a9f4;
+    color: #03a9f4;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 11px;
+    color: #90a4ae;
+}
+.status {
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.status.full {
+    background: #ffc107;
+    color: #000;
+}
+
+.status.half {
+    background: #4caf50;
+}
+
+.status.empty {
+    background: #2196f3;
+}
+
+.status.overflow {
+    background: #f44336;
+}
+
+.confidence {
+    font-size: 14px;
+    color: #cfd8dc;
+}
